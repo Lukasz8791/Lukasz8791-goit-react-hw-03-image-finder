@@ -1,19 +1,10 @@
 import React from 'react';
-import LoaderSpinner from 'react-loader-spinner';
+import style from './Loader.module.css';
 
-const Loader = () => {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-      }}
-    >
-      <LoaderSpinner type="ThreeDots" color="#00BFFF" height={80} width={80} />
-    </div>
-  );
-};
+const Loader = () => (
+  <div className="loaderContainer">
+    <div className="loader"></div>
+  </div>
+);
 
 export default Loader;
