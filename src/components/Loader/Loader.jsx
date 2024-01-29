@@ -1,8 +1,11 @@
 import React from 'react';
-import style from './Loader.module.css';
+import './Loader.module.css';
+import s from './Loader.module.css';
+
 const Loader = () => (
-  <div className="loaderContainer">
-    <div className="loader"></div>
+  <div className={s.loaderContainer}>
+    <div className={s.loader}></div>
   </div>
 );
+
 export default Loader;
