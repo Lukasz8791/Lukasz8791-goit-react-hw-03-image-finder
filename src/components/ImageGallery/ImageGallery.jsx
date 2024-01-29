@@ -1,4 +1,3 @@
-// ImageGallery.jsx
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ImageGalleryItem from './ImageGalleryItem/ImageGalleryItem';
@@ -62,7 +61,6 @@ const ImageGallery = ({ query }) => {
   const handleCloseModal = () => {
     setSelectedImage(null);
   };
-
   return (
     <div>
       {isLoading && (
