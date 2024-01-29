@@ -1,3 +1,4 @@
+// ImageGallery.jsx
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ImageGalleryItem from './ImageGalleryItem/ImageGalleryItem';
@@ -66,7 +67,7 @@ const ImageGallery = ({ query }) => {
     <div>
       {isLoading && (
         <div className={styles.loaderContainer}>
-          <Loader type="ThreeDots" color="#00BFFF" height={100} width={100} />
+          <Loader />
         </div>
       )}
       <ul className={styles.gallery}>
@@ -93,7 +94,9 @@ const ImageGallery = ({ query }) => {
     </div>
   );
 };
+
 ImageGallery.propTypes = {
   query: PropTypes.string.isRequired,
 };
+
 export default ImageGallery;
