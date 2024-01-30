@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchBar from './Searchbar/SearchBar';
+import SearchBar from './SearchBar/SearchBar';
 import ImageGallery from './ImageGallery/ImageGallery';
 import styles from './App.module.css';
 
