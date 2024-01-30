@@ -48,6 +48,7 @@ const ImageGallery = ({ query }) => {
     setCurrentPage(1);
     setHasMore(true);
     fetchImages();
+    // eslint-disable-next-line
   }, [query]);
 
   const handleLoadMore = () => {
@@ -61,6 +62,7 @@ const ImageGallery = ({ query }) => {
   const handleCloseModal = () => {
     setSelectedImage(null);
   };
+
   return (
     <div>
       {isLoading && (
