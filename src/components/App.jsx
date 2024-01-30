@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchBar from './SearchBar/SearchBar';
+import TopBar from './TopBar/TopBar';
 import ImageGallery from './ImageGallery/ImageGallery';
 import styles from './App.module.css';
 
@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className={styles.app}>
-      <SearchBar onSubmit={handleFormSubmit} />
+      <TopBar onSubmit={handleFormSubmit} />
       <ImageGallery query={query} />
     </div>
   );
